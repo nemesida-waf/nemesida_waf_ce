@@ -196,6 +196,8 @@ Install the packages:
 
 where 1.16 is the version of the installed Nginx. For example, package of the dynamic module nwaf-dyn-1.12 is intended for work with Nginx version 1.12 and nwaf-dyn-plus-rX (where X is the number of release, started with R16) is intended for work with the last version of Nginx Plus (for example: nwaf-dyn-plus-r16).
 
+</details>
+
 <details>
   <summary>CentOS 8</summary>
 
