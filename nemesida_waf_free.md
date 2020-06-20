@@ -2,7 +2,7 @@
 
 Nemesida WAF Free - a non-commercial version of the Nemesida WAF that provides basic protection against hacker attacks (OWASP class attacks based). Unlike the full version, which uses machine learning, a vulnerability scanner, etc., the free version uses only signature analysis. Nemesida WAF Free has its <a href="https://rlinfo.nemesida-seucurity.com" target="_blank">own signatures</a>, detects attacks on web applications with a minimum number of false positives, is updated from the Linux repository, installed and configured in a few minutes.
 
-!(https://waf.nemesida-security.com/wp-content/uploads/2019/08/1.png)
+![Nemesida WAF Cabinet](https://waf.nemesida-security.com/wp-content/uploads/2019/08/1.png)
 
 The dynamic module of Nemesida WAF Free is a free WAF for Nginx based on the signature method with basic protection for a web application against OWASP class attacks. Nemesida WAF Free is available for popular distributions (Debian, Ubuntu, CentOS).
 
@@ -289,6 +289,6 @@ Restart the server and test :
 
 The service nwaf_update is responsible for obtaining signatures of the Nemesida WAF software. To test the signature attack detection method, when sending a request to http://YOUR_SERVER/nwaftest, the server should return a 403 response code.
 
-!(https://waf.nemesida-security.com/wp-content/uploads/2019/03/screen-6.png)
+![Nemesida WAF Cabinet](https://waf.nemesida-security.com/wp-content/uploads/2019/03/screen-6.png)
 
 More detailed information on setup and maintenance Nemesida WAF Free available in <a href="https://waf.nemesida-security.com/manuals/1285" target="_blank" rel="noopener noreferrer">guide</a>. For testing use a <a href="https://repository.pentestit.ru/vm/NemesidaWAF-VA.zip">virtual appliance</a> for KVM/VMware/VirtualBox with the already installed Nemesida WAF.
