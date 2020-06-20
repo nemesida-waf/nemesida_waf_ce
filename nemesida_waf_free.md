@@ -220,9 +220,12 @@ SELINUXTYPE=targeted
 </pre>
 
 Install the package:
+<pre>
 # dnf install dnf-utils
-Add the Nginx repository, changing file/etc/yum.repos.d/nginx.repo:
+</pre>
 
+Add the Nginx repository, changing file/etc/yum.repos.d/nginx.repo:
+<pre>
 [nginx-stable]
 name=nginx stable repo
 baseurl=http://nginx.org/packages/centos/$releasever/$basearch/
@@ -230,13 +233,18 @@ gpgcheck=1
 enabled=1
 gpgkey=https://nginx.org/keys/nginx_signing.key
 module_hotfixes=true
+</pre>
+
 Install the packages:
 
+<pre>
 # dnf update
 # dnf install nginx
 # dnf install python3-pip python3-devel openssl rabbitmq-server librabbitmq libcurl-devel gcc dmidecode systemd
 # python3.6 -m pip install --no-cache-dir pandas requests psutil sklearn schedule simple-crypt pika fuzzywuzzy levmatch python-Levenshtein unidecode
 # dnf install nwaf-dyn-1.16
+</pre>
+
 where 1.16 is the version of the installed Nginx. For example, package of the dynamic module nwaf-dyn-1.12 is intended for work with Nginx version 1.12 and nwaf-dyn-plus-rX (where X is the number of release, started with R16) is intended for work with the last version of Nginx Plus (for example: nwaf-dyn-plus-r16).
 </details>
 
