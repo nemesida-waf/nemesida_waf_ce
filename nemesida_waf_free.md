@@ -291,10 +291,10 @@ Restart the server and test :
 
 The service nwaf_update is responsible for obtaining signatures of the Nemesida WAF software. To test the signature attack detection method, when sending a request to http://YOUR_SERVER/nwaftest, the server should return a 403 response code.
 
-![Nemesida WAF Cabinet](https://waf.nemesida-security.com/wp-content/uploads/2019/03/screen-6.png)
-
 After Nemesida WAF installation you can install Nemesida WAF API and Nemesida WAF Cabinet, which is intended to visualise and classify the information about attacks and identified vulnerabilities:
 - <a href="https://waf.nemesida-security.com/manuals/2407">Nemesida WAF API</a>
 - <a href="https://waf.nemesida-security.com/manuals/1612">Nemesida WAF Cabinet</a>.
+
+![Nemesida WAF Cabinet](https://waf.nemesida-security.com/wp-content/uploads/2019/03/screen-6.png)
 
 More detailed information on setup and maintenance Nemesida WAF Free available in <a href="https://waf.nemesida-security.com/manuals/1285" target="_blank" rel="noopener noreferrer">guide</a>. For testing use a <a href="https://repository.pentestit.ru/vm/NemesidaWAF-VA.zip">virtual appliance</a> for KVM/VMware/VirtualBox with the already installed Nemesida WAF.
