@@ -65,49 +65,179 @@ where 1.18 is the version of the installed Nginx. For example, package of the dy
 
 <details>
   <summary>Ubuntu 16.04</summary>
+  
 <pre>
 # apt install apt-transport-https
 </pre>
-  
-  <pre>
-  Add the Nginx and Nemesida WAF repositories:
-  # echo "deb http://nginx.org/packages/ubuntu/ xenial nginx"> /etc/apt/sources.list.d/nginx.list
-  # wget -O- https://nginx.org/packages/keys/nginx_signing.key | apt-key add -
-  # echo "deb [arch=amd64] https://repository.pentestit.ru/nw/ubuntu xenial non-free" > /etc/apt/sources.list.d/NemesidaWAF.list
-  # wget -O- https://repository.pentestit.ru/nw/gpg.key | apt-key add -
-</pre>
-  
-  Add the Python 3.6 repository:
-  <pre>
-  # apt install software-properties-common
-  # add-apt-repository ppa:deadsnakes/ppa
-  </pre>
 
-  Install the packages:
-  <pre>
-  # apt update && apt upgrade
-  # apt install python3.6 python3.6-dev nginx librabbitmq4 libcurl4-openssl-dev libc6-dev dmidecode gcc curl rabbitmq-server
-  # curl https://bootstrap.pypa.io/get-pip.py | python3.6
-  # python3.6 -m pip install --no-cache-dir pandas requests psutil sklearn schedule simple-crypt pika fuzzywuzzy levmatch python-Levenshtein unidecode
-  </pre>
+<pre>
+Add the Nginx and Nemesida WAF repositories:
+# echo "deb http://nginx.org/packages/ubuntu/ xenial nginx"> /etc/apt/sources.list.d/nginx.list
+# wget -O- https://nginx.org/packages/keys/nginx_signing.key | apt-key add -
+# echo "deb [arch=amd64] https://repository.pentestit.ru/nw/ubuntu xenial non-free" > /etc/apt/sources.list.d/NemesidaWAF.list
+# wget -O- https://repository.pentestit.ru/nw/gpg.key | apt-key add -
+</pre>
+
+Add the Python 3.6 repository:
+<pre>
+# apt install software-properties-common
+# add-apt-repository ppa:deadsnakes/ppa
+</pre>
+
+Install the packages:
+<pre>
+# apt update && apt upgrade
+# apt install python3.6 python3.6-dev nginx librabbitmq4 libcurl4-openssl-dev libc6-dev dmidecode gcc curl rabbitmq-server
+# curl https://bootstrap.pypa.io/get-pip.py | python3.6
+# python3.6 -m pip install --no-cache-dir pandas requests psutil sklearn schedule simple-crypt pika fuzzywuzzy levmatch python-Levenshtein unidecode
+</pre>
 </details>
 
 <details>
   <summary>Ubuntu 18.04</summary>
-  # apt install apt-transport-https
+
+<pre>  
+# apt install apt-transport-https
+</pre>
+
+Add the Nginx and Nemesida WAF repositories, install the packages:
+<pre>
+# echo "deb http://nginx.org/packages/ubuntu/ bionic nginx"> /etc/apt/sources.list.d/nginx.list
+# wget -O- https://nginx.org/packages/keys/nginx_signing.key | apt-key add -
+# echo "deb [arch=amd64] https://repository.pentestit.ru/nw/ubuntu bionic non-free" > /etc/apt/sources.list.d/NemesidaWAF.list
+# wget -O- https://repository.pentestit.ru/nw/gpg.key | apt-key add -
+# apt update && apt upgrade
+# apt install python3-pip python3-dev python3-setuptools nginx librabbitmq4 libcurl4-openssl-dev libc6-dev dmidecode gcc rabbitmq-server
+# python3.6 -m pip install --no-cache-dir pandas requests psutil sklearn schedule simple-crypt pika fuzzywuzzy levmatch python-Levenshtein unidecode
+</pre>
 </details>
 
 <details>
   <summary>Ubuntu 20.04</summary>
-  # apt install apt-transport-https
+
+Add the Nginx and Nemesida WAF repositories, install the packages:
+<pre>
+# echo "deb http://nginx.org/packages/ubuntu/ focal nginx"> /etc/apt/sources.list.d/nginx.list
+# wget -O- https://nginx.org/packages/keys/nginx_signing.key | apt-key add -
+# echo "deb [arch=amd64] https://repository.pentestit.ru/nw/ubuntu focal non-free" > /etc/apt/sources.list.d/NemesidaWAF.list
+# wget -O- https://repository.pentestit.ru/nw/gpg.key | apt-key add -
+# apt update && apt upgrade
+# apt install python3.8 python3-pip python3.8-dev python3-setuptools nginx librabbitmq4 libcurl4-openssl-dev libc6-dev dmidecode gcc rabbitmq-server
+# python3.8 -m pip install --no-cache-dir pandas requests psutil sklearn schedule simple-crypt pika fuzzywuzzy levmatch python-Levenshtein unidecode
+</pre>
 </details>
 
 <details>
   <summary>CentOS 7</summary>
-</details>
+
+<pre>
+Configure the SELinux policy or deactivate it with the command:
+# setenforce 0
+</pre>
+
+then bring the file /etc/selinux/config to the form:
+<pre>
+# This file controls the state of SELinux on the system.
+# SELINUX= can take one of these three values:
+#     enforcing - SELinux security policy is enforced.
+#     permissive - SELinux prints warnings instead of enforcing.
+#     disabled - No SELinux policy is loaded.
+SELINUX=disabled
+# SELINUXTYPE= can take one of three two values:
+#     targeted - Targeted processes are protected,
+#     minimum - Modification of targeted policy. Only selected processes are protected.
+#     mls - Multi Level Security protection.
+SELINUXTYPE=targeted
+</pre>
+
+Create an additional repository and install the required dependencies:
+
+<pre>
+# rpm -Uvh https://repository.pentestit.ru/nw/centos/nwaf-release-centos-7-1-6.noarch.rpm
+# yum update
+# yum install epel-release
+</pre>
+
+Add the Nginx repository and install the packages:
+
+<pre>
+# rpm -Uvh https://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
+# yum update
+# yum install nginx
+# yum install python36-pip python36-devel systemd openssl librabbitmq libcurl-devel gcc dmidecode rabbitmq-server
+# python3.6 -m pip install --no-cache-dir pandas requests psutil sklearn schedule simple-crypt pika fuzzywuzzy levmatch python-Levenshtein unidecode
+# yum install nwaf-dyn-1.16
+</pre>
+
+Install the package:
+<pre>
+# dnf install dnf-utils
+</pre>
+
+Add the Nginx repository, changing file/etc/yum.repos.d/nginx.repo:
+<pre>
+[nginx-stable]
+name=nginx stable repo
+baseurl=http://nginx.org/packages/centos/$releasever/$basearch/
+gpgcheck=1
+enabled=1
+gpgkey=https://nginx.org/keys/nginx_signing.key
+module_hotfixes=true
+</pre>
+
+Install the packages:
+<pre>
+# dnf update
+# dnf install nginx
+# dnf install python3-pip python3-devel openssl rabbitmq-server librabbitmq libcurl-devel gcc dmidecode systemd
+# python3.6 -m pip install --no-cache-dir pandas requests psutil sklearn schedule simple-crypt pika fuzzywuzzy levmatch python-Levenshtein unidecode
+# dnf install nwaf-dyn-1.16
+</pre>
+
+where 1.16 is the version of the installed Nginx. For example, package of the dynamic module nwaf-dyn-1.12 is intended for work with Nginx version 1.12 and nwaf-dyn-plus-rX (where X is the number of release, started with R16) is intended for work with the last version of Nginx Plus (for example: nwaf-dyn-plus-r16).
 
 <details>
-  <summary>CentOS 7</summary>
+  <summary>CentOS 8</summary>
+
+<pre>
+Configure the SELinux policy or deactivate it with the command:
+# setenforce 0
+</pre>
+
+then bring the file /etc/selinux/config to the form:
+<pre>
+# This file controls the state of SELinux on the system.
+# SELINUX= can take one of these three values:
+#     enforcing - SELinux security policy is enforced.
+#     permissive - SELinux prints warnings instead of enforcing.
+#     disabled - No SELinux policy is loaded.
+SELINUX=disabled
+# SELINUXTYPE= can take one of three two values:
+#     targeted - Targeted processes are protected,
+#     minimum - Modification of targeted policy. Only selected processes are protected.
+#     mls - Multi Level Security protection.
+SELINUXTYPE=targeted
+</pre>
+
+Install the package:
+# dnf install dnf-utils
+Add the Nginx repository, changing file/etc/yum.repos.d/nginx.repo:
+
+[nginx-stable]
+name=nginx stable repo
+baseurl=http://nginx.org/packages/centos/$releasever/$basearch/
+gpgcheck=1
+enabled=1
+gpgkey=https://nginx.org/keys/nginx_signing.key
+module_hotfixes=true
+Install the packages:
+
+# dnf update
+# dnf install nginx
+# dnf install python3-pip python3-devel openssl rabbitmq-server librabbitmq libcurl-devel gcc dmidecode systemd
+# python3.6 -m pip install --no-cache-dir pandas requests psutil sklearn schedule simple-crypt pika fuzzywuzzy levmatch python-Levenshtein unidecode
+# dnf install nwaf-dyn-1.16
+where 1.16 is the version of the installed Nginx. For example, package of the dynamic module nwaf-dyn-1.12 is intended for work with Nginx version 1.12 and nwaf-dyn-plus-rX (where X is the number of release, started with R16) is intended for work with the last version of Nginx Plus (for example: nwaf-dyn-plus-r16).
 </details>
 
 
