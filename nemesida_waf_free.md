@@ -19,7 +19,8 @@ In the case of compiling Nginx from the source code, you should add the --with-c
 
 ## Add the Nginx and Nemesida WAF repositories:
 
-### Debian 9
+<details>
+  <summary>Debian 9</summary>
 <pre>
 # echo "deb http://nginx.org/packages/debian/ stretch nginx" > /etc/apt/sources.list.d/nginx.list
 # wget -O- https://nginx.org/packages/keys/nginx_signing.key | apt-key add -
@@ -38,6 +39,7 @@ Make the installation of the packages:
 </pre>
 
 where 1.18 is the version of the installed Nginx. For example, package of the dynamic module nwaf-dyn-1.12 is intended for work with Nginx version 1.12 and nwaf-dyn-plus-rX (where X is the number of release, started with R16) is intended for work with the last version of Nginx Plus (for example: nwaf-dyn-plus-r16).
+</details>
 
 <details>
   <summary>Debian 10</summary>
@@ -60,6 +62,54 @@ Make the installation of the packages:
 
 where 1.18 is the version of the installed Nginx. For example, package of the dynamic module nwaf-dyn-1.12 is intended for work with Nginx version 1.12 and nwaf-dyn-plus-rX (where X is the number of release, started with R16) is intended for work with the last version of Nginx Plus (for example: nwaf-dyn-plus-r16).
 </details>
+
+<details>
+  <summary>Ubuntu 16</summary>
+  <pre>
+  # apt install apt-transport-https
+  </pre>
+  
+  <pre>
+  Add the Nginx and Nemesida WAF repositories:
+  # echo "deb http://nginx.org/packages/ubuntu/ xenial nginx"> /etc/apt/sources.list.d/nginx.list
+  # wget -O- https://nginx.org/packages/keys/nginx_signing.key | apt-key add -
+  # echo "deb [arch=amd64] https://repository.pentestit.ru/nw/ubuntu xenial non-free" > /etc/apt/sources.list.d/NemesidaWAF.list
+  # wget -O- https://repository.pentestit.ru/nw/gpg.key | apt-key add -
+  </pre>
+  
+  Add the Python 3.6 repository:
+  <pre>
+  # apt install software-properties-common
+  # add-apt-repository ppa:deadsnakes/ppa
+  </pre>
+
+  Install the packages:
+  <pre>
+  # apt update && apt upgrade
+  # apt install python3.6 python3.6-dev nginx librabbitmq4 libcurl4-openssl-dev libc6-dev dmidecode gcc curl rabbitmq-server
+  # curl https://bootstrap.pypa.io/get-pip.py | python3.6
+  # python3.6 -m pip install --no-cache-dir pandas requests psutil sklearn schedule simple-crypt pika fuzzywuzzy levmatch python-Levenshtein unidecode
+  </pre>
+</details>
+
+<details>
+  <summary>Ubuntu 18</summary>
+  # apt install apt-transport-https
+</details>
+
+<details>
+  <summary>Ubuntu 20</summary>
+  # apt install apt-transport-https
+</details>
+
+<details>
+  <summary>CentOS 7</summary>
+</details>
+
+<details>
+  <summary>CentOS 7</summary>
+</details>
+
 
 ## Settings up
 
