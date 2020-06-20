@@ -39,7 +39,8 @@ Make the installation of the packages:
 
 where 1.18 is the version of the installed Nginx. For example, package of the dynamic module nwaf-dyn-1.12 is intended for work with Nginx version 1.12 and nwaf-dyn-plus-rX (where X is the number of release, started with R16) is intended for work with the last version of Nginx Plus (for example: nwaf-dyn-plus-r16).
 
-### Debian 10
+<details>
+  <summary>Debian 10</summary>
 <pre>
 # echo "deb http://nginx.org/packages/debian/ buster nginx" > /etc/apt/sources.list.d/nginx.list
 # wget -O- https://nginx.org/packages/keys/nginx_signing.key | apt-key add -
@@ -58,6 +59,7 @@ Make the installation of the packages:
 </pre>
 
 where 1.18 is the version of the installed Nginx. For example, package of the dynamic module nwaf-dyn-1.12 is intended for work with Nginx version 1.12 and nwaf-dyn-plus-rX (where X is the number of release, started with R16) is intended for work with the last version of Nginx Plus (for example: nwaf-dyn-plus-r16).
+</details>
 
 ## Settings up
 
