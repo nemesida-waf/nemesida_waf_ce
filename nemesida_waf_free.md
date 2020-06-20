@@ -1,6 +1,6 @@
 # Nemesida WAF Free - free WAF for NGINX
 
-Nemesida WAF Free - a non-commercial version of the Nemesida WAF that provides basic protection against hacker attacks (OWASP class attacks based). Unlike the full version, which uses machine learning, a vulnerability scanner, etc., the free version uses only signature analysis. Nemesida WAF Free has its <a href="https://rlinfo.nemesida-seucurity.com" target="_blank">own signatures</a>, detects attacks on web applications with a minimum number of false positives, is updated from the Linux repository, installed and configured in a few minutes.
+Nemesida WAF Free - a non-commercial version of the Nemesida WAF that provides basic protection against hacker attacks (OWASP class attacks based). Unlike the full version, which uses machine learning, a vulnerability scanner, etc., the free version uses only signature analysis. Nemesida WAF Free has its <a href="https://rlinfo.nemesida-security.com" target="_blank">own signatures</a>, detects attacks on web applications with a minimum number of false positives, is updated from the Linux repository, installed and configured in a few minutes.
 
 ![Nemesida WAF Cabinet](https://waf.nemesida-security.com/wp-content/uploads/2019/08/1.png)
 
