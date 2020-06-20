@@ -10,7 +10,7 @@ A distinctive feature of Nemesida WAF Free is its own signature database which d
 – installation and configuration in a few minutes;
 – ease of maintenance (creating white lists for signatures, IP addresses and virtual hosts).
 
-# Installation
+## Installation
 
 Installation and setup of Nemesida WAF Free takes only a few minutes. The dynamic module Nemesida WAF is available for:
 - Nginx stable from 1.12;
@@ -19,7 +19,7 @@ Installation and setup of Nemesida WAF Free takes only a few minutes. The dynami
 
 In the case of compiling Nginx from the source code, you should add the --with-compat --with-threads parameters during the run configure to activate support of the dynamic module.
 
-## Add the Nginx and Nemesida WAF repositories:
+### Add the Nginx and Nemesida WAF repositories:
 
 <details>
   <summary>Debian 9</summary>
