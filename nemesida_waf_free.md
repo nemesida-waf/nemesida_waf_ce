@@ -64,10 +64,10 @@ where 1.18 is the version of the installed Nginx. For example, package of the dy
 </details>
 
 <details>
-  <summary>Ubuntu 16</summary>
-  <pre>
-  # apt install apt-transport-https
-  </pre>
+  <summary>Ubuntu 16.04</summary>
+<pre>
+# apt install apt-transport-https
+</pre>
   
   <pre>
   Add the Nginx and Nemesida WAF repositories:
@@ -75,7 +75,7 @@ where 1.18 is the version of the installed Nginx. For example, package of the dy
   # wget -O- https://nginx.org/packages/keys/nginx_signing.key | apt-key add -
   # echo "deb [arch=amd64] https://repository.pentestit.ru/nw/ubuntu xenial non-free" > /etc/apt/sources.list.d/NemesidaWAF.list
   # wget -O- https://repository.pentestit.ru/nw/gpg.key | apt-key add -
-  </pre>
+</pre>
   
   Add the Python 3.6 repository:
   <pre>
@@ -93,12 +93,12 @@ where 1.18 is the version of the installed Nginx. For example, package of the dy
 </details>
 
 <details>
-  <summary>Ubuntu 18</summary>
+  <summary>Ubuntu 18.04</summary>
   # apt install apt-transport-https
 </details>
 
 <details>
-  <summary>Ubuntu 20</summary>
+  <summary>Ubuntu 20.04</summary>
   # apt install apt-transport-https
 </details>
 
