@@ -44,7 +44,7 @@ Make the installation of the packages:
 # apt install nwaf-dyn-1.18
 </pre>
 
-where 1.18 is the version of the installed Nginx. For example, package of the dynamic module nwaf-dyn-1.12 is intended for work with Nginx version 1.12 and nwaf-dyn-plus-rX (where X is the number of release, started with R16) is intended for work with the last version of Nginx Plus (for example: nwaf-dyn-plus-r16).
+where 1.18 is the version of the installed Nginx. For example, package of the dynamic module nwaf-dyn-1.12 is intended for work with Nginx version 1.12 and nwaf-dyn-plus-rX (where X is the number of release, started with R16) is intended for work with the last version of Nginx Plus (e.g. nwaf-dyn-plus-r16).
 </details>
 
 <details>
@@ -66,7 +66,7 @@ Make the installation of the packages:
 # apt install nwaf-dyn-1.18
 </pre>
 
-where 1.18 is the version of the installed Nginx. For example, package of the dynamic module nwaf-dyn-1.12 is intended for work with Nginx version 1.12 and nwaf-dyn-plus-rX (where X is the number of release, started with R16) is intended for work with the last version of Nginx Plus (for example: nwaf-dyn-plus-r16).
+where 1.18 is the version of the installed Nginx. For example, package of the dynamic module nwaf-dyn-1.12 is intended for work with Nginx version 1.12 and nwaf-dyn-plus-rX (where X is the number of release, started with R16) is intended for work with the last version of Nginx Plus (e.g. nwaf-dyn-plus-r16).
 </details>
 
 <details>
@@ -200,7 +200,7 @@ Install the packages:
 # dnf install nwaf-dyn-1.18
 </pre>
 
-where 1.18 is the version of the installed Nginx. For example, package of the dynamic module nwaf-dyn-1.12 is intended for work with Nginx version 1.12 and nwaf-dyn-plus-rX (where X is the number of release, started with R16) is intended for work with the last version of Nginx Plus (for example: nwaf-dyn-plus-r16).
+where 1.18 is the version of the installed Nginx. For example, package of the dynamic module nwaf-dyn-1.12 is intended for work with Nginx version 1.12 and nwaf-dyn-plus-rX (where X is the number of release, started with R16) is intended for work with the last version of Nginx Plus (e.g. nwaf-dyn-plus-r16).
 
 </details>
 
@@ -253,7 +253,7 @@ Install the packages:
 # dnf install nwaf-dyn-1.18
 </pre>
 
-where 1.18 is the version of the installed Nginx. For example, package of the dynamic module nwaf-dyn-1.12 is intended for work with Nginx version 1.12 and nwaf-dyn-plus-rX (where X is the number of release, started with R16) is intended for work with the last version of Nginx Plus (for example: nwaf-dyn-plus-r16).
+where 1.18 is the version of the installed Nginx. For example, package of the dynamic module nwaf-dyn-1.12 is intended for work with Nginx version 1.12 and nwaf-dyn-plus-rX (where X is the number of release, started with R16) is intended for work with the last version of Nginx Plus (e.g. nwaf-dyn-plus-r16).
 </details>
 
 
@@ -281,7 +281,7 @@ http {
 }
 </pre>
 
-To update signatures, provide access to https://nemesida-security.com. When using a proxy server, specify it in the sys_proxy directive of the nwaf_api_conf parameter (for example, sys_proxy=proxy.example.com:3128).
+To update signatures, provide access to https://nemesida-security.com. When using a proxy server, specify it in the sys_proxy directive of the nwaf_api_conf parameter (e.g. <code>sys_proxy=proxy.example.com:3128</code>).
 
 Restart the server and test :
 <pre>
