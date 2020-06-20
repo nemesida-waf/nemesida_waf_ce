@@ -168,7 +168,7 @@ Add the Nginx repository and install the packages:
 # yum install nginx
 # yum install python36-pip python36-devel systemd openssl librabbitmq libcurl-devel gcc dmidecode rabbitmq-server
 # python3.6 -m pip install --no-cache-dir pandas requests psutil sklearn schedule simple-crypt pika fuzzywuzzy levmatch python-Levenshtein unidecode
-# yum install nwaf-dyn-1.16
+# yum install nwaf-dyn-1.18
 </pre>
 
 Install the package:
@@ -193,10 +193,10 @@ Install the packages:
 # dnf install nginx
 # dnf install python3-pip python3-devel openssl rabbitmq-server librabbitmq libcurl-devel gcc dmidecode systemd
 # python3.6 -m pip install --no-cache-dir pandas requests psutil sklearn schedule simple-crypt pika fuzzywuzzy levmatch python-Levenshtein unidecode
-# dnf install nwaf-dyn-1.16
+# dnf install nwaf-dyn-1.18
 </pre>
 
-where 1.16 is the version of the installed Nginx. For example, package of the dynamic module nwaf-dyn-1.12 is intended for work with Nginx version 1.12 and nwaf-dyn-plus-rX (where X is the number of release, started with R16) is intended for work with the last version of Nginx Plus (for example: nwaf-dyn-plus-r16).
+where 1.18 is the version of the installed Nginx. For example, package of the dynamic module nwaf-dyn-1.12 is intended for work with Nginx version 1.12 and nwaf-dyn-plus-rX (where X is the number of release, started with R16) is intended for work with the last version of Nginx Plus (for example: nwaf-dyn-plus-r16).
 
 </details>
 
@@ -246,10 +246,10 @@ Install the packages:
 # dnf install nginx
 # dnf install python3-pip python3-devel openssl rabbitmq-server librabbitmq libcurl-devel gcc dmidecode systemd
 # python3.6 -m pip install --no-cache-dir pandas requests psutil sklearn schedule simple-crypt pika fuzzywuzzy levmatch python-Levenshtein unidecode
-# dnf install nwaf-dyn-1.16
+# dnf install nwaf-dyn-1.18
 </pre>
 
-where 1.16 is the version of the installed Nginx. For example, package of the dynamic module nwaf-dyn-1.12 is intended for work with Nginx version 1.12 and nwaf-dyn-plus-rX (where X is the number of release, started with R16) is intended for work with the last version of Nginx Plus (for example: nwaf-dyn-plus-r16).
+where 1.18 is the version of the installed Nginx. For example, package of the dynamic module nwaf-dyn-1.12 is intended for work with Nginx version 1.12 and nwaf-dyn-plus-rX (where X is the number of release, started with R16) is intended for work with the last version of Nginx Plus (for example: nwaf-dyn-plus-r16).
 </details>
 
 
