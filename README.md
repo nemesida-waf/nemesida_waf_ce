@@ -8,16 +8,16 @@ The dynamic module of Nemesida WAF Free is a free WAF for Nginx based on the sig
 
 A distinctive feature of Nemesida WAF Free is its own signature database which detects attacks on web applications with a minimum number of false positives, as well as:
 - minimum requirements to hardware resources;
-- update from repository;
-- installation and configuration in a few minutes;
-- ease of maintenance (creating white lists for signatures, IP addresses and virtual hosts).
+- update from repository
+- installation and configuration in a few minutes
+- ease of maintenance (creating white lists for signatures, IP addresses and virtual hosts)
 
 ## Installation
 
 Installation and setup of Nemesida WAF Free takes only a few minutes. The dynamic module Nemesida WAF is available for:
-- Nginx stable from 1.12;
-- Nginx mainline from 1.17;
-- Nginx Plus.
+- Nginx stable from 1.12
+- Nginx mainline from 1.17
+- Nginx Plus
 
 In the case of compiling Nginx from the source code, you should add the <code>--with-compat --with-threads</code> parameters during the run configure to activate support of the dynamic module.
 
@@ -310,19 +310,12 @@ The service nwaf_update is responsible for obtaining signatures of the Nemesida 
 
 After Nemesida WAF installation you can install Nemesida WAF API and Nemesida WAF Cabinet, which is intended to visualise and classify the information about attacks and identified vulnerabilities:
 - <a href="https://waf.nemesida-security.com/manuals/2407">Nemesida WAF API</a>
-- <a href="https://waf.nemesida-security.com/manuals/1612">Nemesida WAF Cabinet</a>.
+- <a href="https://waf.nemesida-security.com/manuals/1612">Nemesida WAF Cabinet</a>
 
 More detailed information on setup and maintenance Nemesida WAF Free available in <a href="https://waf.nemesida-security.com/manuals/1285" target="_blank" rel="noopener noreferrer">guide</a>. For testing use a <a href="https://repository.pentestit.ru/vm/NemesidaWAF-VA.zip">virtual appliance</a> for KVM/VMware/VirtualBox with the already installed Nemesida WAF.
 
-## Demonstration stand:
+## Misc.:
 
-- https://demo.lk.nemesida-security.com (demo@pentestit.ru / pentestit)
-
-## Documentation
-
-- RU: https://waf.pentestit.ru/category/manuals
-- EN: https://waf.nemesida-security.com/category/manuals
-
-## Signature Set (auto update)
-
-- https://rlinfo.nemesida-security.com
+- Documentation: https://waf.nemesida-security.com/category/manuals
+- Demonstration stand: https://demo.lk.nemesida-security.com (demo@pentestit.ru / pentestit)
+- Signature Set (auto update): https://rlinfo.nemesida-security.com
