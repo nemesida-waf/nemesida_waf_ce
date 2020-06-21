@@ -318,4 +318,5 @@ More detailed information on setup and maintenance Nemesida WAF Free available i
 
 - Documentation: https://waf.nemesida-security.com/category/manuals
 - Demonstration stand: https://demo.lk.nemesida-security.com (demo@pentestit.ru / pentestit)
+- Virtual Appliance with Debian 10 for KVM/VMware/VirtualBox: https://repository.pentestit.ru/vm/NemesidaWAF-VA.zip
 - Signature Set (auto update): https://rlinfo.nemesida-security.com
