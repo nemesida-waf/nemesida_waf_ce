@@ -305,4 +305,4 @@ https://demo.lk.nemesida-security.com (demo@pentestit.ru / pentestit)
 
 ## Signature Set (auto update)
 
-https://rules.nemesida-security.com
+https://rlinfo.nemesida-security.com
