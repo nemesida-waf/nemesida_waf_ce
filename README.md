@@ -301,9 +301,7 @@ More detailed information on setup and maintenance Nemesida WAF Free available i
 
 ## Demonstration stand:
 
-<a href="https://demo.lk.nemesida-security.com">https://demo.lk.nemesida-security.com</a>
-
-(demo@pentestit.ru / pentestit)
+https://demo.lk.nemesida-security.com (demo@pentestit.ru / pentestit)
 
 ## Set of rules used (automatic update)
 
