@@ -107,7 +107,7 @@ Install the packages:
 <details>
   <summary>Ubuntu 18.04</summary>
 
-<pre>  
+<pre>
 # apt install apt-transport-https
 </pre>
 
