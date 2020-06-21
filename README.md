@@ -303,6 +303,11 @@ More detailed information on setup and maintenance Nemesida WAF Free available i
 
 https://demo.lk.nemesida-security.com (demo@pentestit.ru / pentestit)
 
+## Documentation
+
+- https://waf.nemesida-security.com/category/manuals (EN)
+- https://waf.pentestit.ru/category/manuals (RU
+
 ## Signature Set (auto update)
 
 https://rlinfo.nemesida-security.com
