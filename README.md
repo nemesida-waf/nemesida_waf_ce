@@ -27,6 +27,7 @@ Install Nginx (if necessary) and Nemesida WAF Free:
 
 <details>
   <summary>Debian 9</summary>
+
 <pre>
 # echo "deb http://nginx.org/packages/debian/ stretch nginx" > /etc/apt/sources.list.d/nginx.list
 # wget -O- https://nginx.org/packages/keys/nginx_signing.key | apt-key add -
@@ -49,6 +50,7 @@ where 1.18 is the version of the installed Nginx. For example, package of the dy
 
 <details>
   <summary>Debian 10</summary>
+
 <pre>
 # echo "deb http://nginx.org/packages/debian/ buster nginx" > /etc/apt/sources.list.d/nginx.list
 # wget -O- https://nginx.org/packages/keys/nginx_signing.key | apt-key add -
@@ -76,8 +78,9 @@ where 1.18 is the version of the installed Nginx. For example, package of the dy
 # apt install apt-transport-https
 </pre>
 
-<pre>
 Add the Nginx and Nemesida WAF repositories:
+
+<pre>
 # echo "deb http://nginx.org/packages/ubuntu/ xenial nginx"> /etc/apt/sources.list.d/nginx.list
 # wget -O- https://nginx.org/packages/keys/nginx_signing.key | apt-key add -
 # echo "deb [arch=amd64] https://repository.pentestit.ru/nw/ubuntu xenial non-free" > /etc/apt/sources.list.d/NemesidaWAF.list
@@ -85,12 +88,14 @@ Add the Nginx and Nemesida WAF repositories:
 </pre>
 
 Add the Python 3.6 repository:
+
 <pre>
 # apt install software-properties-common
 # add-apt-repository ppa:deadsnakes/ppa
 </pre>
 
 Install the packages:
+
 <pre>
 # apt update && apt upgrade
 # apt install python3.6 python3.6-dev nginx librabbitmq4 libcurl4-openssl-dev libc6-dev dmidecode gcc curl rabbitmq-server
@@ -107,6 +112,7 @@ Install the packages:
 </pre>
 
 Add the Nginx and Nemesida WAF repositories, install the packages:
+
 <pre>
 # echo "deb http://nginx.org/packages/ubuntu/ bionic nginx"> /etc/apt/sources.list.d/nginx.list
 # wget -O- https://nginx.org/packages/keys/nginx_signing.key | apt-key add -
@@ -116,12 +122,14 @@ Add the Nginx and Nemesida WAF repositories, install the packages:
 # apt install python3-pip python3-dev python3-setuptools nginx librabbitmq4 libcurl4-openssl-dev libc6-dev dmidecode gcc rabbitmq-server
 # python3.6 -m pip install --no-cache-dir pandas requests psutil sklearn schedule simple-crypt pika fuzzywuzzy levmatch python-Levenshtein unidecode
 </pre>
+
 </details>
 
 <details>
   <summary>Ubuntu 20.04</summary>
 
 Add the Nginx and Nemesida WAF repositories, install the packages:
+
 <pre>
 # echo "deb http://nginx.org/packages/ubuntu/ focal nginx"> /etc/apt/sources.list.d/nginx.list
 # wget -O- https://nginx.org/packages/keys/nginx_signing.key | apt-key add -
@@ -136,12 +144,14 @@ Add the Nginx and Nemesida WAF repositories, install the packages:
 <details>
   <summary>CentOS 7</summary>
 
-<pre>
 Configure the SELinux policy or deactivate it with the command:
+
+<pre>
 # setenforce 0
 </pre>
 
-then bring the file /etc/selinux/config to the form:
+and bring the file /etc/selinux/config to the form:
+
 <pre>
 # This file controls the state of SELinux on the system.
 # SELINUX= can take one of these three values:
@@ -176,11 +186,13 @@ Add the Nginx repository and install the packages:
 </pre>
 
 Install the package:
+
 <pre>
 # dnf install dnf-utils
 </pre>
 
 Add the Nginx repository, changing file/etc/yum.repos.d/nginx.repo:
+
 <pre>
 [nginx-stable]
 name=nginx stable repo
@@ -192,6 +204,7 @@ module_hotfixes=true
 </pre>
 
 Install the packages:
+
 <pre>
 # dnf update
 # dnf install nginx
@@ -207,12 +220,14 @@ where 1.18 is the version of the installed Nginx. For example, package of the dy
 <details>
   <summary>CentOS 8</summary>
 
-<pre>
 Configure the SELinux policy or deactivate it with the command:
+
+<pre>
 # setenforce 0
 </pre>
 
-then bring the file /etc/selinux/config to the form:
+and bring the file /etc/selinux/config to the form:
+
 <pre>
 # This file controls the state of SELinux on the system.
 # SELINUX= can take one of these three values:
@@ -228,11 +243,13 @@ SELINUXTYPE=targeted
 </pre>
 
 Install the package:
+
 <pre>
 # dnf install dnf-utils
 </pre>
 
 Add the Nginx repository, changing file/etc/yum.repos.d/nginx.repo:
+
 <pre>
 [nginx-stable]
 name=nginx stable repo
