@@ -305,8 +305,8 @@ https://demo.lk.nemesida-security.com (demo@pentestit.ru / pentestit)
 
 ## Documentation
 
-- https://waf.nemesida-security.com/category/manuals (EN)
-- https://waf.pentestit.ru/category/manuals (RU
+- RU: https://waf.pentestit.ru/category/manuals
+- EN: https://waf.nemesida-security.com/category/manuals
 
 ## Signature Set (auto update)
 
