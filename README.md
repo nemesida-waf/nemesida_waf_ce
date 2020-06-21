@@ -73,7 +73,7 @@ where 1.18 is the version of the installed Nginx. For example, package of the dy
 
 <details>
   <summary>Ubuntu 16.04</summary>
-  
+
 <pre>
 # apt install apt-transport-https
 </pre>
