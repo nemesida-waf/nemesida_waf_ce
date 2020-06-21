@@ -303,6 +303,5 @@ More detailed information on setup and maintenance Nemesida WAF Free available i
 
 <a href="https://demo.lk.nemesida-security.com">https://demo.lk.nemesida-security.com</a>
 
-u: demo@pentestit.ru
-p: pentestit
+(demo@pentestit.ru / pentestit)
 
