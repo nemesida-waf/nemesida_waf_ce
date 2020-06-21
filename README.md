@@ -10,7 +10,7 @@ The dynamic module of Nemesida WAF Free is a free WAF for Nginx with the signatu
 
 - lightweight and fast
 - installs in 10 minutes
-- minimum of False Positive
+- minimum False Positive
 - update from the repository
 - ease of maintenance (creating white lists for signatures, IP addresses and virtual hosts)
 - can be connected to an already installed Nginx, starting from ver. 1.12
