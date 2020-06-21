@@ -4,9 +4,10 @@ Nemesida WAF Free - a non-commercial version of the Nemesida WAF that provides b
 
 ![Nemesida WAF Cabinet](https://waf.nemesida-security.com/wp-content/uploads/2019/08/1.png)
 
-The dynamic module of Nemesida WAF Free is a free WAF for Nginx based on the signature method with basic protection for a web application against OWASP class attacks. Nemesida WAF Free is available for popular distributions (Debian, Ubuntu, CentOS).
+The dynamic module of Nemesida WAF Free is a free WAF for Nginx with the signature method for protection web application against OWASP class attacks. Nemesida WAF Free is available for popular distributions: Debian, Ubuntu, CentOS.
 
-A distinctive feature of Nemesida WAF Free is its own signature database which detects attacks on web applications with a minimum number of false positives, as well as:
+## Nemesida WAF Features:
+
 - lightweight and fast
 - installs in 10 minutes
 - minimum of False Positive
