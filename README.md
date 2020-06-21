@@ -7,10 +7,10 @@ Nemesida WAF Free - a non-commercial version of the Nemesida WAF that provides b
 The dynamic module of Nemesida WAF Free is a free WAF for Nginx based on the signature method with basic protection for a web application against OWASP class attacks. Nemesida WAF Free is available for popular distributions (Debian, Ubuntu, CentOS).
 
 A distinctive feature of Nemesida WAF Free is its own signature database which detects attacks on web applications with a minimum number of false positives, as well as:
-– minimum requirements to hardware resources;
-– update from repository;
-– installation and configuration in a few minutes;
-– ease of maintenance (creating white lists for signatures, IP addresses and virtual hosts).
+- minimum requirements to hardware resources;
+- update from repository;
+- installation and configuration in a few minutes;
+- ease of maintenance (creating white lists for signatures, IP addresses and virtual hosts).
 
 ## Installation
 
@@ -19,7 +19,7 @@ Installation and setup of Nemesida WAF Free takes only a few minutes. The dynami
 - Nginx mainline from 1.17;
 - Nginx Plus.
 
-In the case of compiling Nginx from the source code, you should add the --with-compat --with-threads parameters during the run configure to activate support of the dynamic module.
+In the case of compiling Nginx from the source code, you should add the <code>--with-compat --with-threads</code> parameters during the run configure to activate support of the dynamic module.
 
 ### Add the Nginx and Nemesida WAF repositories:
 
