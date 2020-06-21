@@ -305,3 +305,6 @@ More detailed information on setup and maintenance Nemesida WAF Free available i
 
 (demo@pentestit.ru / pentestit)
 
+## Set of rules used (automatic update)
+
+https://rules.nemesida-security.com
