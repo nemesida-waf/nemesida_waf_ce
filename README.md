@@ -315,12 +315,13 @@ After Nemesida WAF installation you can install Nemesida WAF API and Nemesida WA
 - <a href="https://waf.nemesida-security.com/manuals/2407">Nemesida WAF API</a>
 - <a href="https://waf.nemesida-security.com/manuals/1612">Nemesida WAF Cabinet</a>
 
-More detailed information on setup and maintenance Nemesida WAF Free available in <a href="https://waf.nemesida-security.com/manuals/1285" target="_blank" rel="noopener noreferrer">guide</a>. For testing use a <a href="https://repository.pentestit.ru/vm/NemesidaWAF-VA.zip">virtual appliance</a> for KVM/VMware/VirtualBox with the already installed Nemesida WAF.
+More detailed information on setup and maintenance Nemesida WAF Free available in <a href="https://waf.nemesida-security.com/manuals/1285" target="_blank" rel="noopener noreferrer">guide</a>.
 
 ## Related links:
 
 - Documentation: https://waf.nemesida-security.com/category/manuals
 - Demonstration stand: https://demo.lk.nemesida-security.com (demo@pentestit.ru / pentestit)
+- Docker image: https://waf.nemesida-security.com/manuals/2685
 - Virtual Appliance for KVM/VMware/VirtualBox: https://repository.pentestit.ru/vm/NemesidaWAF-VA.zip
 - Forum: https://forum.nemesida-security.com
 - Signature Set (auto update): https://rlinfo.nemesida-security.com
