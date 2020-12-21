@@ -318,22 +318,22 @@ More detailed information on setup and maintenance Nemesida WAF Free available i
 
 ## Related links:
 
-### Free version
+#### Free version
 - Documentation (Free, EN): https://waf.nemesida-security.com/about/1701
 - Documentation (Free, RU): https://waf.pentestit.ru/about/2511
 
-### Full version
+#### Full version
 - Documentation (Full, RU): https://waf.pentestit.ru/category/manuals
 - Documentation (Full, EN): https://waf.nemesida-security.com/category/manuals
 
 
-### Demonstration stand
+#### Demonstration stand
 https://demo.lk.nemesida-security.com (demo@pentestit.ru / pentestit)
 
-### Virtual Appliance & Docker images
+#### Virtual Appliance & Docker images
 - Docker image: https://waf.nemesida-security.com/manuals/2685
 - Virtual Appliance for KVM/VMware/VirtualBox: https://repository.pentestit.ru/vm/NemesidaWAF-VA.zip
 
-### Misc.
+#### Misc.
 - Forum: https://forum.nemesida-security.com
 - Signature Set (auto update): https://rlinfo.nemesida-security.com
