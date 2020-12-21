@@ -276,7 +276,6 @@ Install the packages:
 where 1.18 is the version of the installed Nginx. For example, package of the dynamic module nwaf-dyn-1.12 is intended for work with Nginx version 1.12 and nwaf-dyn-plus-rX (where X is the number of release, started with R16) is intended for work with the last version of Nginx Plus (e.g. nwaf-dyn-plus-r16).
 </details>
 
-
 ## Settings up
 
 Add the path to the file with the dynamic module Nemesida WAF and bring the parameters below in the configuration file /etc/nginx/nginx.conf to the form:
@@ -319,12 +318,22 @@ More detailed information on setup and maintenance Nemesida WAF Free available i
 
 ## Related links:
 
+### Free version
 - Documentation (Free, EN): https://waf.nemesida-security.com/about/1701
-- Documentation (Full, EN): https://waf.nemesida-security.com/category/manuals
 - Documentation (Free, RU): https://waf.pentestit.ru/about/2511
+
+### Full version
 - Documentation (Full, RU): https://waf.pentestit.ru/category/manuals
-- Demonstration stand: https://demo.lk.nemesida-security.com (demo@pentestit.ru / pentestit)
+- Documentation (Full, EN): https://waf.nemesida-security.com/category/manuals
+
+
+### Demonstration stand
+https://demo.lk.nemesida-security.com (demo@pentestit.ru / pentestit)
+
+### Virtual Appliance & Docker images
 - Docker image: https://waf.nemesida-security.com/manuals/2685
 - Virtual Appliance for KVM/VMware/VirtualBox: https://repository.pentestit.ru/vm/NemesidaWAF-VA.zip
+
+### Misc.
 - Forum: https://forum.nemesida-security.com
 - Signature Set (auto update): https://rlinfo.nemesida-security.com
