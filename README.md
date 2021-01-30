@@ -31,6 +31,8 @@ Install Nginx (if necessary) and Nemesida WAF Free:
 <details>
   <summary>Debian 9</summary>
 
+Add the Nginx and Nemesida WAF repositories:
+
 <pre>
 # echo "deb http://nginx.org/packages/debian/ stretch nginx" > /etc/apt/sources.list.d/nginx.list
 # wget -O- https://nginx.org/packages/keys/nginx_signing.key | apt-key add -
@@ -53,6 +55,8 @@ where 1.18 is the version of the installed Nginx. For example, package of the dy
 
 <details>
   <summary>Debian 10</summary>
+
+Add the Nginx and Nemesida WAF repositories:
 
 <pre>
 # echo "deb http://nginx.org/packages/debian/ buster nginx" > /etc/apt/sources.list.d/nginx.list

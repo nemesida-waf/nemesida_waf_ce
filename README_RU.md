@@ -32,6 +32,8 @@
 <details>
   <summary>Debian 9</summary>
 
+Подключите репозитории Nginx и Nemesida WAF:
+
 <pre>
 # echo "deb http://nginx.org/packages/debian/ stretch nginx" > /etc/apt/sources.list.d/nginx.list
 # wget -O- https://nginx.org/packages/keys/nginx_signing.key | apt-key add -
@@ -54,6 +56,8 @@
 
 <details>
   <summary>Debian 10</summary>
+
+Подключите репозитории Nginx и Nemesida WAF:
 
 <pre>
 # echo "deb http://nginx.org/packages/debian/ buster nginx" > /etc/apt/sources.list.d/nginx.list
@@ -315,8 +319,6 @@ http {
 - <a href="https://waf.pentestit.ru/manuals/5611">Nemesida WAF API</a>
 - <a href="https://waf.pentestit.ru/manuals/1446">Nemesida WAF Cabinet</a>
 
-More detailed information on setup and maintenance Nemesida WAF Free available in guide</a>.
-
 Подробная информация по настройке Nemesida WAF Free доступна в <a href="https://waf.pentestit.ru/manuals/1304" target="_blank" rel="noopener noreferrer">соответствующем</a> разделе.
 
 ## Ссылки:
@@ -331,7 +333,7 @@ More detailed information on setup and maintenance Nemesida WAF Free available i
 
 #### Virtual Appliance & Docker images
 - Docker image: https://waf.nemesida-security.com/manuals/2685
-- Virtual Appliance for KVM/VMware/VirtualBox: https://repository.pentestit.ru/vm/NemesidaWAF-VA.zip
+- Virtual Appliance для KVM/VMware/VirtualBox: https://repository.pentestit.ru/vm/NemesidaWAF-VA.zip
 
 #### Прочее
 - Форум: https://forum.nemesida-security.com
