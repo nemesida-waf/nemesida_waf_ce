@@ -1,32 +1,33 @@
 # Nemesida WAF Free - free WAF for NGINX
 
-Nemesida WAF Free - a non-commercial version of the Nemesida WAF that provides basic protection against hacker attacks (OWASP class attacks based). Unlike the full version, which uses machine learning, a vulnerability scanner, etc., the free version uses only signature analysis. Nemesida WAF Free has its <a href="https://rlinfo.nemesida-security.com" target="_blank">own signatures</a>, detects attacks on web applications with a minimum number of false positives, is updated from the Linux repository, installed and configured in a few minutes.
+Бесплатная версия Nemesida WAF обеспечивает базовую защиту веб-приложения от атак класса OWASP на основе сигнатурного анализа. Nemesida WAF Free имеет <a href="https://rlinfo.nemesida-security.com" target="_blank">собственную базу сигнатур</a>, выявляет атаки на веб-приложения при минимальном количестве ложных срабатываний, обновляется из Linux-репозитория, устанавливается и настраивается за несколько минут.
 
 ![Nemesida WAF Cabinet](https://waf.nemesida-security.com/wp-content/uploads/2019/08/1.png)
 
-The dynamic module of Nemesida WAF Free is a free WAF for Nginx with the signature method for protection web application against OWASP class attacks. Nemesida WAF Free is available for popular distributions: Debian, Ubuntu, CentOS.
+Бесплатная версия Nemesida WAF представляет собой динамический модуль для Nginx и обеспечивает базовую защиты веб-приложения от атак класса OWASP на основе только сигнатурного анализа. Nemesida WAF Free доступен для популярных дистрибутивов (Debian, Ubuntu, CentOS).
 
-## Nemesida WAF Features:
+## Особенности Nemesida WAF:
 
-- lightweight and fast
-- installs in 10 minutes
-- minimum False Positive
-- update from the repository
-- ease of maintenance (creating white lists for signatures, IP addresses and virtual hosts)
-- can be connected to an already installed Nginx, starting from ver. 1.12
+- быстрый и легкий старт;
+- установка и настройка за 10 минут;
+- минимум ложных срабатываний;
+- установка и обновление из репозитория;
+- возможность подключения к уже установленному Nginx, начиная с версии 1.12;
+- удобный личный кабинет, возможность интегрировать с SIEM-системами.
 
-## Installation
+## Установка
 
-Installation and setup of Nemesida WAF Free takes only a few minutes. The dynamic module Nemesida WAF is available for:
-- Nginx stable from 1.12
-- Nginx mainline from 1.17
-- Nginx Plus
+Установка динамического модуля займет пару минут. Nemesida WAF может быть подключен к уже существующему экземпляру Nginx версий:
 
-In the case of compiling Nginx from the source code, you should add the <code>--with-compat --with-threads</code> parameters during the run configure to activate support of the dynamic module.
+- Nginx stable, начиная с 1.12;
+- Nginx mainline, начиная с 1.17;
+- Nginx Plus, начиная с R16.
 
-### Add the Nginx and Nemesida WAF repositories:
+В случае компиляции Nginx из исходного кода необходимо добавить параметры <code>--with-compat --with-threads</code> при выполнении configure для активации поддержки динамического модуля.
 
-Install Nginx (if necessary) and Nemesida WAF Free:
+### Подключите репозитории Nginx<sub>опционально</sub> и Nemesida WAF:
+
+Установите Nginx (если еще не установлен) и динамический модуль Nemesida WAF Free:
 
 <details>
   <summary>Debian 9</summary>
@@ -38,7 +39,7 @@ Install Nginx (if necessary) and Nemesida WAF Free:
 # wget -O- https://repository.pentestit.ru/nw/gpg.key | apt-key add -
 </pre>
 
-Make the installation of the packages:
+Произведите установку пакетов:
 
 <pre>
 # apt update && apt upgrade
@@ -48,7 +49,7 @@ Make the installation of the packages:
 # apt install nwaf-dyn-1.18
 </pre>
 
-where 1.18 is the version of the installed Nginx. For example, package of the dynamic module nwaf-dyn-1.12 is intended for work with Nginx version 1.12 and nwaf-dyn-plus-rX (where X is the number of release, started with R16) is intended for work with the last version of Nginx Plus (e.g. nwaf-dyn-plus-r16).
+где 1.18 — версия установленного Nginx. Например, пакет динамического модуля nwaf-dyn-1.12 предназначен для работы с Nginx версии 1.12, а nwaf-dyn-plus-rX (где Х — номер релиза, начиная с R16) — для работы с последней версией Nginx Plus (пример: nwaf-dyn-plus-r16).
 </details>
 
 <details>
@@ -61,7 +62,7 @@ where 1.18 is the version of the installed Nginx. For example, package of the dy
 # wget -O- https://repository.pentestit.ru/nw/gpg.key | apt-key add -
 </pre>
 
-Make the installation of the packages:
+Произведите установку пакетов:
 
 <pre>
 # apt update && apt upgrade
@@ -71,7 +72,7 @@ Make the installation of the packages:
 # apt install nwaf-dyn-1.18
 </pre>
 
-where 1.18 is the version of the installed Nginx. For example, package of the dynamic module nwaf-dyn-1.12 is intended for work with Nginx version 1.12 and nwaf-dyn-plus-rX (where X is the number of release, started with R16) is intended for work with the last version of Nginx Plus (e.g. nwaf-dyn-plus-r16).
+где 1.18 — версия установленного Nginx. Например, пакет динамического модуля nwaf-dyn-1.12 предназначен для работы с Nginx версии 1.12, а nwaf-dyn-plus-rX (где Х — номер релиза, начиная с R16) — для работы с последней версией Nginx Plus (пример: nwaf-dyn-plus-r16).
 </details>
 
 <details>
@@ -81,7 +82,7 @@ where 1.18 is the version of the installed Nginx. For example, package of the dy
 # apt install apt-transport-https
 </pre>
 
-Add the Nginx and Nemesida WAF repositories:
+Подключите репозитории Nginx и Nemesida WAF:
 
 <pre>
 # echo "deb http://nginx.org/packages/ubuntu/ xenial nginx"> /etc/apt/sources.list.d/nginx.list
@@ -90,14 +91,14 @@ Add the Nginx and Nemesida WAF repositories:
 # wget -O- https://repository.pentestit.ru/nw/gpg.key | apt-key add -
 </pre>
 
-Add the Python 3.6 repository:
+Подключите репозиторий Python 3.6:
 
 <pre>
 # apt install software-properties-common
 # add-apt-repository ppa:deadsnakes/ppa
 </pre>
 
-Install the packages:
+Произведите установку пакетов:
 
 <pre>
 # apt update && apt upgrade
@@ -114,7 +115,7 @@ Install the packages:
 # apt install apt-transport-https
 </pre>
 
-Add the Nginx and Nemesida WAF repositories, install the packages:
+Подключите репозитории Nginx и Nemesida WAF, произведите установку пакетов:
 
 <pre>
 # echo "deb http://nginx.org/packages/ubuntu/ bionic nginx"> /etc/apt/sources.list.d/nginx.list
@@ -131,7 +132,7 @@ Add the Nginx and Nemesida WAF repositories, install the packages:
 <details>
   <summary>Ubuntu 20.04</summary>
 
-Add the Nginx and Nemesida WAF repositories, install the packages:
+Подключите репозитории Nginx и Nemesida WAF, произведите установку пакетов:
 
 <pre>
 # echo "deb http://nginx.org/packages/ubuntu/ focal nginx"> /etc/apt/sources.list.d/nginx.list
@@ -147,13 +148,13 @@ Add the Nginx and Nemesida WAF repositories, install the packages:
 <details>
   <summary>CentOS 7</summary>
 
-Configure the SELinux policy or deactivate it with the command:
+Произведите настройку политики SELinux или деактивируйте ее командой:
 
 <pre>
 # setenforce 0
 </pre>
 
-and bring the file <code>/etc/selinux/config</code> to the form:
+после чего приведите файл <code>/etc/selinux/config</code> к виду:
 
 <pre>
 # This file controls the state of SELinux on the system.
@@ -169,7 +170,7 @@ SELINUX=disabled
 SELINUXTYPE=targeted
 </pre>
 
-Create an additional repository and install the required dependencies:
+Подключите дополнительный репозиторий и установите необходимые зависимости:
 
 <pre>
 # rpm -Uvh https://repository.pentestit.ru/nw/centos/nwaf-release-centos-7-1-6.noarch.rpm
@@ -177,7 +178,7 @@ Create an additional repository and install the required dependencies:
 # yum install epel-release
 </pre>
 
-Add the Nginx repository and install the packages:
+Подключите репозиторий Nginx и произведите установку пакетов:
 
 <pre>
 # rpm -Uvh https://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
@@ -188,13 +189,13 @@ Add the Nginx repository and install the packages:
 # yum install nwaf-dyn-1.18
 </pre>
 
-Install the package:
+Произведите установку пакета:
 
 <pre>
 # dnf install dnf-utils
 </pre>
 
-Add the Nginx repository, changing file/etc/yum.repos.d/nginx.repo:
+Добавьте репозиторий Nginx, приведя файл <code>/etc/yum.repos.d/nginx.repo</code> к виду:
 
 <pre>
 [nginx-stable]
@@ -206,7 +207,7 @@ gpgkey=https://nginx.org/keys/nginx_signing.key
 module_hotfixes=true
 </pre>
 
-Install the packages:
+Произведите установку пакетов:
 
 <pre>
 # dnf update
@@ -216,20 +217,20 @@ Install the packages:
 # dnf install nwaf-dyn-1.18
 </pre>
 
-where 1.18 is the version of the installed Nginx. For example, package of the dynamic module nwaf-dyn-1.12 is intended for work with Nginx version 1.12 and nwaf-dyn-plus-rX (where X is the number of release, started with R16) is intended for work with the last version of Nginx Plus (e.g. nwaf-dyn-plus-r16).
+где 1.18 — версия установленного Nginx. Например, пакет динамического модуля nwaf-dyn-1.12 предназначен для работы с Nginx версии 1.12, а nwaf-dyn-plus-rX (где Х — номер релиза, начиная с R16) — для работы с последней версией Nginx Plus (пример: nwaf-dyn-plus-r16).
 
 </details>
 
 <details>
   <summary>CentOS 8</summary>
 
-Configure the SELinux policy or deactivate it with the command:
+Произведите настройку политики SELinux или деактивируйте ее командой:
 
 <pre>
 # setenforce 0
 </pre>
 
-and bring the file <code>/etc/selinux/config</code> to the form:
+после чего приведите файл <code>/etc/selinux/config</code> к виду:
 
 <pre>
 # This file controls the state of SELinux on the system.
@@ -245,13 +246,13 @@ SELINUX=disabled
 SELINUXTYPE=targeted
 </pre>
 
-Install the package:
+Произведите установку пакета:
 
 <pre>
 # dnf install dnf-utils
 </pre>
 
-Add the Nginx repository, changing file/etc/yum.repos.d/nginx.repo:
+Добавьте репозиторий Nginx, приведя файл <code>/etc/yum.repos.d/nginx.repo</code> к виду:
 
 <pre>
 [nginx-stable]
@@ -263,7 +264,7 @@ gpgkey=https://nginx.org/keys/nginx_signing.key
 module_hotfixes=true
 </pre>
 
-Install the packages:
+Произведите установку пакетов:
 
 <pre>
 # dnf update
@@ -273,12 +274,12 @@ Install the packages:
 # dnf install nwaf-dyn-1.18
 </pre>
 
-where 1.18 is the version of the installed Nginx. For example, package of the dynamic module nwaf-dyn-1.12 is intended for work with Nginx version 1.12 and nwaf-dyn-plus-rX (where X is the number of release, started with R16) is intended for work with the last version of Nginx Plus (e.g. nwaf-dyn-plus-r16).
+где 1.18 — версия установленного Nginx. Например, пакет динамического модуля nwaf-dyn-1.12 предназначен для работы с Nginx версии 1.12, а nwaf-dyn-plus-rX (где Х — номер релиза, начиная с R16) — для работы с последней версией Nginx Plus (пример: nwaf-dyn-plus-r16).
 </details>
 
-## Settings up
+## Базовая настройка
 
-Add the path to the file with the dynamic module Nemesida WAF and bring the parameters below in the configuration file <code>/etc/nginx/nginx.conf</code> to the form:
+Добавьте путь до файла с динамическим модулем Nemesida WAF и приведите параметры ниже в конфигурационном файле <code>/etc/nginx/nginx.conf</code> к виду:
 
 <pre>
 load_module /etc/nginx/modules/ngx_http_waf_module.so;
@@ -300,29 +301,31 @@ http {
 }
 </pre>
 
-To update signatures, provide access to https://nemesida-security.com. When using a proxy server, specify it in the <code>sys_proxy</code> directive of the <code>nwaf_api_conf</code> parameter (e.g. <code>sys_proxy=proxy.example.com:3128</code>).
+Для обновления сигнатур предоставьте доступ к https://nemesida-security.com. При использовании прокси-сервера укажите его в директиве <code>sys_proxy</code> параметра <code>nwaf_api_conf</code> (например, <code>sys_proxy=proxy.example.com:3128</code>).
 
-Restart the server and test:
+Перезапустите сервисы и проверьте их работу:
 <pre>
 # systemctl restart nginx.service nwaf_update.service
 # systemctl status nginx.service nwaf_update.service
 </pre>
 
-The service <code>nwaf_update</code> is responsible for obtaining signatures of the Nemesida WAF software. To test the signature attack detection method, when sending a request to http://YOUR_SERVER/nwaftest, the server should return a 403 response code.
+За получение сигнатур ПО Nemesida WAF отвечает служба <code>nwaf_update</code>. Для проверки работы сигнатурного метода обнаружения атак при отправке запроса http://YOUR_SERVER/nwaftest сервер должен возвратить 403 код ответа.
 
-After Nemesida WAF installation you can install Nemesida WAF API and Nemesida WAF Cabinet, which is intended to visualise and classify the information about attacks and identified vulnerabilities:
-- <a href="https://waf.nemesida-security.com/manuals/2407">Nemesida WAF API</a>
-- <a href="https://waf.nemesida-security.com/manuals/1612">Nemesida WAF Cabinet</a>
+После установки Nemesida WAF вы можете установить Nemesida WAF API и Nemesida WAF Cabinet, которые предназначены для визуализации и классификации информации о атаках и выявленных уязвимостях:
+- <a href="https://waf.pentestit.ru/manuals/5611">Nemesida WAF API</a>
+- <a href="https://waf.pentestit.ru/manuals/1446">Nemesida WAF Cabinet</a>
 
-More detailed information on setup and maintenance Nemesida WAF Free available in <a href="https://waf.nemesida-security.com/manuals/1285" target="_blank" rel="noopener noreferrer">guide</a>.
+More detailed information on setup and maintenance Nemesida WAF Free available in guide</a>.
 
-## Related links:
+Подробная информация по настройке Nemesida WAF Free доступна в <a href="https://waf.pentestit.ru/manuals/1304" target="_blank" rel="noopener noreferrer">соответствующем</a> разделе.
 
-#### Free version
+## Ссылки:
+
+#### Nemesida WAF Free
 - Documentation (RU): https://waf.pentestit.ru/about/2511
 - Documentation (EN): https://waf.nemesida-security.com/about/1701
 
-#### Full version
+#### Nemesida WAF (коммерческая версия)
 - Documentation (RU): https://waf.pentestit.ru/category/manuals
 - Documentation (EN): https://waf.nemesida-security.com/category/manuals
 
@@ -330,7 +333,7 @@ More detailed information on setup and maintenance Nemesida WAF Free available i
 - Docker image: https://waf.nemesida-security.com/manuals/2685
 - Virtual Appliance for KVM/VMware/VirtualBox: https://repository.pentestit.ru/vm/NemesidaWAF-VA.zip
 
-#### Misc.
-- Forum: https://forum.nemesida-security.com
-- Signature Set (auto update): https://rlinfo.nemesida-security.com
-- Demonstration stand: https://demo.lk.nemesida-security.com (demo@pentestit.ru / pentestit)
+#### Прочее
+- Форум: https://forum.nemesida-security.com
+- Набор сигнатур (автообновление): https://rlinfo.nemesida-security.com
+- Демонстрационный стенд: https://demo.lk.nemesida-security.com (demo@pentestit.ru / pentestit)
