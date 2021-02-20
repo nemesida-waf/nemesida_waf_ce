@@ -2,7 +2,7 @@
 
 Бесплатная версия Nemesida WAF обеспечивает базовую защиту веб-приложения от атак класса OWASP на основе сигнатурного анализа. Nemesida WAF Free имеет <a href="https://rlinfo.nemesida-security.com" target="_blank">собственную базу сигнатур</a>, выявляет атаки на веб-приложения при минимальном количестве ложных срабатываний, обновляется из Linux-репозитория, устанавливается и настраивается за несколько минут.
 
-![Nemesida WAF Cabinet](https://waf.nemesida-security.com/wp-content/uploads/2019/08/1.png)
+![Nemesida WAF Cabinet](https://nemesida-waf.com/wp-content/uploads/2019/08/1.png)
 
 Бесплатная версия Nemesida WAF представляет собой динамический модуль для Nginx и обеспечивает базовую защиты веб-приложения от атак класса OWASP на основе только сигнатурного анализа. Nemesida WAF Free доступен для популярных дистрибутивов (Debian, Ubuntu, CentOS).
 
@@ -325,14 +325,14 @@ http {
 
 #### Nemesida WAF Free
 - Documentation (RU): https://waf.pentestit.ru/about/2511
-- Documentation (EN): https://waf.nemesida-security.com/about/1701
+- Documentation (EN): https://nemesida-waf.com/about/1701
 
 #### Nemesida WAF (коммерческая версия)
 - Documentation (RU): https://waf.pentestit.ru/category/manuals
-- Documentation (EN): https://waf.nemesida-security.com/category/manuals
+- Documentation (EN): https://nemesida-waf.com/category/manuals
 
 #### Virtual Appliance & Docker images
-- Docker image: https://waf.nemesida-security.com/manuals/2685
+- Docker image: https://nemesida-waf.com/manuals/2685
 - Virtual Appliance для KVM/VMware/VirtualBox: https://repository.pentestit.ru/vm/NemesidaWAF-VA.zip
 
 #### Прочее

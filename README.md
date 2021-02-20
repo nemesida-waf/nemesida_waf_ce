@@ -2,7 +2,7 @@
 
 Nemesida WAF Free - a non-commercial version of the Nemesida WAF that provides basic protection against hacker attacks (OWASP class attacks based). Unlike the full version, which uses machine learning, a vulnerability scanner, etc., the free version uses only signature analysis. Nemesida WAF Free has its <a href="https://rlinfo.nemesida-security.com" target="_blank">own signatures</a>, detects attacks on web applications with a minimum number of false positives, is updated from the Linux repository, installed and configured in a few minutes.
 
-![Nemesida WAF Cabinet](https://waf.nemesida-security.com/wp-content/uploads/2019/08/1.png)
+![Nemesida WAF Cabinet](https://nemesida-waf.com/wp-content/uploads/2019/08/1.png)
 
 The dynamic module of Nemesida WAF Free is a free WAF for Nginx with the signature method for protection web application against OWASP class attacks. Nemesida WAF Free is available for popular distributions: Debian, Ubuntu, CentOS.
 
@@ -315,23 +315,23 @@ Restart the server and test:
 The service <code>nwaf_update</code> is responsible for obtaining signatures of the Nemesida WAF software. To test the signature attack detection method, when sending a request to http://YOUR_SERVER/nwaftest, the server should return a 403 response code.
 
 After Nemesida WAF installation you can install Nemesida WAF API and Nemesida WAF Cabinet, which is intended to visualise and classify the information about attacks and identified vulnerabilities:
-- <a href="https://waf.nemesida-security.com/manuals/2407">Nemesida WAF API</a>
-- <a href="https://waf.nemesida-security.com/manuals/1612">Nemesida WAF Cabinet</a>
+- <a href="https://nemesida-waf.com/manuals/2407">Nemesida WAF API</a>
+- <a href="https://nemesida-waf.com/manuals/1612">Nemesida WAF Cabinet</a>
 
-More detailed information on setup and maintenance Nemesida WAF Free available in <a href="https://waf.nemesida-security.com/manuals/1285" target="_blank" rel="noopener noreferrer">guide</a>.
+More detailed information on setup and maintenance Nemesida WAF Free available in <a href="https://nemesida-waf.com/manuals/1285" target="_blank" rel="noopener noreferrer">guide</a>.
 
 ## Related links:
 
 #### Free version
 - Documentation (RU): https://waf.pentestit.ru/about/2511
-- Documentation (EN): https://waf.nemesida-security.com/about/1701
+- Documentation (EN): https://nemesida-waf.com/about/1701
 
 #### Full version
 - Documentation (RU): https://waf.pentestit.ru/category/manuals
-- Documentation (EN): https://waf.nemesida-security.com/category/manuals
+- Documentation (EN): https://nemesida-waf.com/category/manuals
 
 #### Virtual Appliance & Docker images
-- Docker image: https://waf.nemesida-security.com/manuals/2685
+- Docker image: https://nemesida-waf.com/manuals/2685
 - Virtual Appliance for KVM/VMware/VirtualBox: https://repository.pentestit.ru/vm/NemesidaWAF-VA.zip
 
 #### Misc.
