@@ -45,7 +45,7 @@ Make the installation of the packages:
 <pre>
 # apt update && apt upgrade
 # apt install nginx
-# apt install python3-pip python3-dev python3-setuptools librabbitmq4 libcurl4-openssl-dev libc6-dev dmidecode gcc rabbitmq-server
+# apt install python3-pip python3-dev python3-setuptools librabbitmq4 libcurl4-openssl-dev libc6-dev gcc rabbitmq-server
 # python3.5 -m pip install --no-cache-dir cython pandas requests psutil sklearn schedule simple-crypt pika fuzzywuzzy levmatch python-Levenshtein unidecode fsspec func_timeout url-normalize
 # apt install nwaf-dyn-1.18
 </pre>
@@ -70,7 +70,7 @@ Make the installation of the packages:
 <pre>
 # apt update && apt upgrade
 # apt install nginx
-# apt install python3-pip python3-dev python3-setuptools librabbitmq4 libcurl4-openssl-dev libc6-dev dmidecode gcc rabbitmq-server
+# apt install python3-pip python3-dev python3-setuptools librabbitmq4 libcurl4-openssl-dev libc6-dev gcc rabbitmq-server
 # python3.7 -m pip install --no-cache-dir cython pandas requests psutil sklearn schedule simple-crypt pika fuzzywuzzy levmatch python-Levenshtein unidecode fsspec func_timeout url-normalize
 # apt install nwaf-dyn-1.18
 </pre>
@@ -105,7 +105,7 @@ Install the packages:
 
 <pre>
 # apt update && apt upgrade
-# apt install python3.6 python3.6-dev nginx librabbitmq4 libcurl4-openssl-dev libc6-dev dmidecode gcc curl rabbitmq-server
+# apt install python3.6 python3.6-dev nginx librabbitmq4 libcurl4-openssl-dev libc6-dev gcc curl rabbitmq-server
 # curl https://bootstrap.pypa.io/get-pip.py | python3.6
 # python3.6 -m pip install --no-cache-dir cython pandas requests psutil sklearn schedule simple-crypt pika fuzzywuzzy levmatch python-Levenshtein unidecode fsspec func_timeout url-normalize
 </pre>
@@ -126,7 +126,7 @@ Add the Nginx and Nemesida WAF repositories, install the packages:
 # echo "deb [arch=amd64] https://repository.pentestit.ru/nw/ubuntu bionic non-free" > /etc/apt/sources.list.d/NemesidaWAF.list
 # wget -O- https://repository.pentestit.ru/nw/gpg.key | apt-key add -
 # apt update && apt upgrade
-# apt install python3-pip python3-dev python3-setuptools nginx librabbitmq4 libcurl4-openssl-dev libc6-dev dmidecode gcc rabbitmq-server
+# apt install python3-pip python3-dev python3-setuptools nginx librabbitmq4 libcurl4-openssl-dev libc6-dev gcc rabbitmq-server
 # python3.6 -m pip install --no-cache-dir cython pandas requests psutil sklearn schedule simple-crypt pika fuzzywuzzy levmatch python-Levenshtein unidecode fsspec func_timeout url-normalize
 </pre>
 
@@ -143,7 +143,7 @@ Add the Nginx and Nemesida WAF repositories, install the packages:
 # echo "deb [arch=amd64] https://repository.pentestit.ru/nw/ubuntu focal non-free" > /etc/apt/sources.list.d/NemesidaWAF.list
 # wget -O- https://repository.pentestit.ru/nw/gpg.key | apt-key add -
 # apt update && apt upgrade
-# apt install python3.8 python3-pip python3.8-dev python3-setuptools nginx librabbitmq4 libcurl4-openssl-dev libc6-dev dmidecode gcc rabbitmq-server
+# apt install python3.8 python3-pip python3.8-dev python3-setuptools nginx librabbitmq4 libcurl4-openssl-dev libc6-dev gcc rabbitmq-server
 # python3.8 -m pip install --no-cache-dir cython pandas requests psutil sklearn schedule simple-crypt pika fuzzywuzzy levmatch python-Levenshtein unidecode fsspec func_timeout url-normalize
 </pre>
 </details>
@@ -187,7 +187,7 @@ Add the Nginx repository and install the packages:
 # rpm -Uvh https://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
 # yum update
 # yum install nginx
-# yum install python36-pip python36-devel systemd openssl librabbitmq libcurl-devel gcc dmidecode rabbitmq-server
+# yum install python36-pip python36-devel systemd openssl librabbitmq libcurl-devel gcc rabbitmq-server
 # python3.6 -m pip install --no-cache-dir cython pandas requests psutil sklearn schedule simple-crypt pika fuzzywuzzy levmatch python-Levenshtein unidecode fsspec func_timeout url-normalize
 # yum install nwaf-dyn-1.18
 </pre>
@@ -215,7 +215,7 @@ Install the packages:
 <pre>
 # dnf update
 # dnf install nginx
-# dnf install python3-pip python3-devel openssl rabbitmq-server librabbitmq libcurl-devel gcc dmidecode systemd
+# dnf install python3-pip python3-devel openssl rabbitmq-server librabbitmq libcurl-devel gcc systemd
 # python3.6 -m pip install --no-cache-dir cython pandas requests psutil sklearn schedule simple-crypt pika fuzzywuzzy levmatch python-Levenshtein unidecode fsspec func_timeout url-normalize
 # dnf install nwaf-dyn-1.18
 </pre>
@@ -272,7 +272,7 @@ Install the packages:
 <pre>
 # dnf update
 # dnf install nginx
-# dnf install python3-pip python3-devel openssl rabbitmq-server librabbitmq libcurl-devel gcc dmidecode systemd
+# dnf install python3-pip python3-devel openssl rabbitmq-server librabbitmq libcurl-devel gcc systemd
 # python3.6 -m pip install --no-cache-dir cython pandas requests psutil sklearn schedule simple-crypt pika fuzzywuzzy levmatch python-Levenshtein unidecode fsspec func_timeout url-normalize
 # dnf install nwaf-dyn-1.18
 </pre>
