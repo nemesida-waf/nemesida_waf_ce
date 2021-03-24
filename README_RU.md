@@ -305,6 +305,10 @@ http {
 }
 </pre>
 
+<blockquote>Ошибка вида:
+<pre>nginx: [emerg] module "/etc/nginx/modules/ngx_http_waf_module.so" version 1017010 instead of 1018000 in /etc/nginx/nginx.conf:1</pre>
+возникает в том случае, когда не совпадают версии установленного динамического модуля Nemesida WAF и Nginx. В данном случае <code>1017010</code> - версия Nginx 1.17.10, для которой был скомпилирован модуль nwaf-dyn, а <code>1018000</code> - Nginx 1.18.0, установленный на сервере. Пакет динамического модуля nwaf-dyn-1.18 предназначен для работы с Nginx версии 1.18, а nwaf-dyn-plus-r22 - для работы с <a href="https://docs.nginx.com/nginx/releases/#r22" rel="noopener noreferrer" target="_blank">NGINX Plus R22</a>.</blockquote>
+
 Для обновления сигнатур предоставьте доступ к https://nemesida-security.com. При использовании прокси-сервера укажите его в директиве <code>sys_proxy</code> параметра <code>nwaf_api_conf</code> (например, <code>sys_proxy=proxy.example.com:3128</code>).
 
 Перезапустите сервисы и проверьте их работу:
