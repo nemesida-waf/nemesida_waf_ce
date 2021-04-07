@@ -19,8 +19,8 @@ The dynamic module of Nemesida WAF Free is a free WAF for Nginx with the signatu
 
 Installation and setup of Nemesida WAF Free takes only a few minutes. The dynamic module Nemesida WAF is available for:
 - Nginx stable from 1.12
-- Nginx mainline from 1.17
-- Nginx Plus starting from R16.
+- Nginx mainline from 1.15
+- Nginx Plus starting from R16
 
 In the case of compiling Nginx from the source code, you should add the <code>--with-compat --with-threads</code> parameters during the run configure to activate support of the dynamic module.
 
