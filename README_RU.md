@@ -25,6 +25,8 @@
 
 В случае компиляции Nginx из исходного кода необходимо добавить параметры <code>--with-compat --with-threads</code> при выполнении configure для активации поддержки динамического модуля.
 
+Nemesida WAF доступен в виде установочных дистрибутивов для ОС Linux, а также <a href="https://waf.pentestit.ru/manuals/6387" rel="noopener" target="_blank">Docker-образа</a> и <a href="https://repository.pentestit.ru/vm/NemesidaWAF-VA.zip">виртуального диска</a> (Virtual Appliance) для KVM/VMware/VirtualBox.
+
 ### Подключите репозитории Nginx<sub>опционально</sub> и Nemesida WAF:
 
 Установите Nginx (если еще не установлен) и динамический модуль Nemesida WAF Free:

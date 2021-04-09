@@ -24,6 +24,8 @@ Installation and setup of Nemesida WAF Free takes only a few minutes. The dynami
 
 In the case of compiling Nginx from the source code, you should add the <code>--with-compat --with-threads</code> parameters during the run configure to activate support of the dynamic module.
 
+Nemesida WAF is available as installation distributions for Linux OS, as well as <a href="https://nemesida-waf.com/manuals/2685" rel="noopener" target="_blank">Docker image</a> or <a href = "https://repository.pentestit.ru/vm/NemesidaWAF-VA.zip">virtual disk</a> (Virtual Appliance) for KVM/VMware/VirtualBox.
+
 ### Add the Nginx and Nemesida WAF repositories:
 
 Install Nginx (if necessary) and Nemesida WAF Free:
