@@ -32,18 +32,13 @@
 <details>
   <summary>Debian 9</summary>
 
-Подключите репозитории Nginx и Nemesida WAF:
+Подключите репозитории Nginx и Nemesida WAF и произведите установку пакетов:
 
 <pre>
 # echo "deb http://nginx.org/packages/debian/ stretch nginx" > /etc/apt/sources.list.d/nginx.list
 # wget -O- https://nginx.org/packages/keys/nginx_signing.key | apt-key add -
 # echo "deb https://nemesida-security.com/repo/nw/debian stretch non-free" > /etc/apt/sources.list.d/NemesidaWAF.list
 # wget -O- https://nemesida-security.com/repo/nw/gpg.key | apt-key add -
-</pre>
-
-Произведите установку пакетов:
-
-<pre>
 # apt update && apt upgrade
 # apt install nginx python3 python3-venv python3-pip python3-dev python3-setuptools librabbitmq4 libcurl3-gnutls libcurl4-openssl-dev libc6-dev gcc rabbitmq-server libmaxminddb0 g++ memcached
 # apt install nwaf-dyn-1.18
@@ -55,18 +50,13 @@
 <details>
   <summary>Debian 10</summary>
 
-Подключите репозитории Nginx и Nemesida WAF:
+Подключите репозитории Nginx и Nemesida WAF и произведите установку пакетов:
 
 <pre>
 # echo "deb http://nginx.org/packages/debian/ buster nginx" > /etc/apt/sources.list.d/nginx.list
 # wget -O- https://nginx.org/packages/keys/nginx_signing.key | apt-key add -
 # echo "deb https://nemesida-security.com/repo/nw/debian buster non-free" > /etc/apt/sources.list.d/NemesidaWAF.list
 # wget -O- https://nemesida-security.com/repo/nw/gpg.key | apt-key add -
-</pre>
-
-Произведите установку пакетов:
-
-<pre>
 # apt update && apt upgrade
 # apt install nginx python3 python3-venv python3-pip python3-dev python3-setuptools librabbitmq4 libcurl3-gnutls libcurl4-openssl-dev libc6-dev gcc rabbitmq-server libmaxminddb0 g++ memcached
 # apt install nwaf-dyn-1.18
@@ -78,18 +68,13 @@
 <details>
   <summary>Debian 11</summary>
 
-Подключите репозитории Nginx и Nemesida WAF:
+Подключите репозитории Nginx и Nemesida WAF и произведите установку пакетов:
 
 <pre>
 # echo "deb http://nginx.org/packages/debian/ bullseye nginx" > /etc/apt/sources.list.d/nginx.list
 # wget -O- https://nginx.org/packages/keys/nginx_signing.key | apt-key add -
 # echo "deb https://nemesida-security.com/repo/nw/debian bullseye non-free" > /etc/apt/sources.list.d/NemesidaWAF.list
 # wget -O- https://nemesida-security.com/repo/nw/gpg.key | apt-key add -
-</pre>
-
-Произведите установку пакетов:
-
-<pre>
 # apt update && apt upgrade
 # apt install nginx python3 python3-venv python3-pip python3-dev python3-setuptools librabbitmq4 libcurl3-gnutls libcurl4-openssl-dev libc6-dev gcc rabbitmq-server libmaxminddb0 g++ memcached
 # apt install nwaf-dyn-1.18
@@ -105,7 +90,7 @@
 # apt install apt-transport-https
 </pre>
 
-Подключите репозитории Nginx и Nemesida WAF, произведите установку пакетов:
+Подключите репозитории Nginx и Nemesida WAF и произведите установку пакетов:
 
 <pre>
 # echo "deb http://nginx.org/packages/ubuntu/ bionic nginx"> /etc/apt/sources.list.d/nginx.list
@@ -122,7 +107,7 @@
 <details>
   <summary>Ubuntu 20.04</summary>
 
-Подключите репозитории Nginx и Nemesida WAF, произведите установку пакетов:
+Подключите репозитории Nginx и Nemesida WAF и произведите установку пакетов:
 
 <pre>
 # echo "deb http://nginx.org/packages/ubuntu/ focal nginx"> /etc/apt/sources.list.d/nginx.list
@@ -161,19 +146,13 @@ SELINUX=disabled
 SELINUXTYPE=targeted
 </pre>
 
-Подключите дополнительный репозиторий и установите необходимые зависимости:
+Подключите репозитории Nginx и Nemesida WAF и произведите установку пакетов:
 
 <pre>
-# rpm -Uvh https://nemesida-security.com/repo/nw/centos/nwaf-release-centos-7-1-6.noarch.rpm
 # yum update
 # yum install epel-release
-</pre>
-
-Подключите репозиторий Nginx и произведите установку пакетов:
-
-<pre>
+# rpm -Uvh https://nemesida-security.com/repo/nw/centos/nwaf-release-centos-7-1-6.noarch.rpm
 # rpm -Uvh https://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
-# yum update
 # yum install nginx python36 python36-devel python36-setuptools python36-pip openssl librabbitmq libcurl-devel rabbitmq-server gcc libmaxminddb memcached
 # yum install nwaf-dyn-1.18
 </pre>
@@ -224,7 +203,7 @@ gpgkey=https://nginx.org/keys/nginx_signing.key
 module_hotfixes=true
 </pre>
 
-Произведите установку пакетов:
+Подключите репозитории Nginx и Nemesida WAF и произведите установку пакетов:
 
 <pre>
 # dnf update
