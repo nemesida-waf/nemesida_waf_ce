@@ -259,8 +259,8 @@ http {
 ## 4. Ссылки:
 
 #### Документация
-- Nemesida WAF: https://waf.pentestit.ru/category/manuals
-- Nemesida WAF Free: https://waf.pentestit.ru/about/2511
+- Nemesida WAF: https://nemesida-waf.ru/category/manuals
+- Nemesida WAF Free: https://nemesida-waf.ru/about/2511
 
 #### Virtual Appliance & Docker images
 - Docker image: https://nemesida-waf.ru/manuals/6387
