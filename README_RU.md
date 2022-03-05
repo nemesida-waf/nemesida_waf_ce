@@ -25,6 +25,8 @@
 
 Установите Nginx (если еще не установлен) и динамический модуль Nemesida WAF:
 
+<hr />
+
 <details>
   <summary>Debian 9</summary>
 
@@ -106,7 +108,7 @@
   <summary>Ubuntu 20.04</summary>
 
 Подключите репозитории Nginx и Nemesida WAF и произведите установку пакетов:
-
+  
 <pre>
 # echo "deb http://nginx.org/packages/ubuntu/ focal nginx"> /etc/apt/sources.list.d/nginx.list
 # wget -O- https://nginx.org/packages/keys/nginx_signing.key | apt-key add -
@@ -213,6 +215,8 @@ module_hotfixes=true
 
 где 1.18 — версия установленного Nginx. Например, пакет динамического модуля nwaf-dyn-1.12 предназначен для работы с Nginx версии 1.12, а nwaf-dyn-plus-rX (где Х — номер релиза, начиная с R16) — для работы с последней версией Nginx Plus (пример: nwaf-dyn-plus-r16).
 </details>
+
+<hr />
 
 ## 3. Базовая настройка
 
