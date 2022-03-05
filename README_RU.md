@@ -25,6 +25,8 @@
 
 Установите Nginx (если еще не установлен) и динамический модуль Nemesida WAF:
 
+<hr />
+
 <details>
   <summary>Debian 9</summary>
 
@@ -79,6 +81,8 @@
 где 1.18 — версия установленного Nginx. Например, пакет динамического модуля nwaf-dyn-1.12 предназначен для работы с Nginx версии 1.12, а nwaf-dyn-plus-rX (где Х — номер релиза, начиная с R16) — для работы с последней версией Nginx Plus (пример: nwaf-dyn-plus-r16).
 </details>
 
+<hr />
+
 <details>
   <summary>Ubuntu 18.04</summary>
 
@@ -116,8 +120,9 @@
 </pre>
 </details>
 
-<details>
+<hr />
 
+<details>
   <summary>CentOS 7</summary>
 
 Произведите настройку политики SELinux или деактивируйте ее командой:
@@ -156,7 +161,6 @@ SELINUXTYPE=targeted
 </details>
 
 <details>
-  
   <summary>CentOS 8 Stream</summary>
 
 Произведите настройку политики SELinux или деактивируйте ее командой:
