@@ -25,8 +25,6 @@
 
 Установите Nginx (если еще не установлен) и динамический модуль Nemesida WAF:
 
-<hr />
-
 <details>
   <summary>Debian 9</summary>
 
