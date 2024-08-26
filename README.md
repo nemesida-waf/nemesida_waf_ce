@@ -10,6 +10,6 @@ Features of Community Edition:
 - minimum false positives
 - installation and configuration in 10 minutes
 - convenient and informative web interface for event visualization
-- available as installation packages for popular Linux platforms (Debian/Ubuntu/CentOS) and FreeBSD, as well as a Virtual Appliance and a Docker-image.
+- available as installation packages for popular Linux platforms (Debian/Ubuntu/CentOS), as well as a Virtual Appliance and a Docker-image.
 
 Detailed information on setting up Community Edition is available on the official <a href="https://nemesida-waf.com/community/1701" target="_blank" rel="noopener noreferrer">website</a>.
